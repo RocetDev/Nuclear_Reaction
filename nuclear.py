@@ -5,8 +5,9 @@ import sys
 
 pygame.init()
 
-boom = pygame.mixer.Sound('boom.mp3')
-image = pygame.image.load('eyes.jpg')
+# add this lines for adding image and sound for screamer
+#boom = pygame.mixer.Sound('boom.mp3')
+#image = pygame.image.load('eyes.jpg')
 
 screen = pygame.display.set_mode((1310, 690))
 pygame.display.set_caption("Nuclear reaction")
@@ -138,7 +139,8 @@ while True:
 	drawSecondAtoms()
 
 	if len(atoms) <= 4: 
-		# boom.play() # with suprise
+		# for screamer
+		# boom.play()
 		# new_image = pygame.transform.scale(image, (1310, 690))
 		# screen.blit(new_image, (0,0))
 		# no suprise
